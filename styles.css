@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    color: white;
+}
+
+.main {
+    height: 785px;
+    background: url(Imagem/bg.jpg) center no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    color: white
+}
+
+.main h1 {
+    font-size: 54px;
+    max-width: 720px;
+}
+
+.main-child {
+    z-index: 1;
+    display: grid;
+    justify-content: center;
+    
+}
+
+.main-child p {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.main-child span {
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.main-child .form-email{
+    display: grid;
+    grid-template-columns: 450px 180px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.main-child .form-email input {
+    padding: 20px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    position: relative;
+}
+
+.main-child .form-email button {
+    background-color: #e50914;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.main-child .form-email button:hover {
+    background-color: #f40612;
+} 
+
+.main-child .form-email button::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    margin-left: 10px;
+    background: url(imagem/seta.svg) no-repeat top right;
+}
+
+.gradiant-img {
+    background: rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.6) 100% );
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* Cabecalho */
+.header {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1250px;
+    top: 30px;
+    left: 40px;
+}
+
+.header a {
+    text-decoration: none;
+    display: inline-block;;
+    background-color: #e50914;
+    color: white;
+    align-self: flex-start;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+
+.header a:hover{
+    background-color: #f40612;
+}
+
+/* section */ 
+.section {
+    background: black;
+    border-top: 9px solid #222;
+}
+
+.section h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.section p {
+    font-size: 20px;
+}
+
+.container {
+    width: 1130px;
+    margin: 0 auto;
+
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    align-items: center;
+}
+
+.img-tv {
+    position: relative;
+}
+
+.img-tv img {
+    position: relative;
+    z-index: 1;
+}
+
+.video {
+    position: absolute;
+    top: 85px;
+    left: 71px;
+    z-index: 0;
+    width: 400px;
+}
+
+.section img {
+    display: block;
+    width: 100%;
+}
+
+.dowloands {
+    background: black;
+}
+
+.dowloands .grid > div:first-child {
+    order: 2;
+}
+
+.dowloands .img-tv {
+    order: 1;
+}
+
+.dowloands h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.dowloands p {
+    font-size: 20px;
+    width: 400px;
+}
+
+.assista .video {
+    width: 350px;
+    top: 35px;
+    left: 92px;
+}
+
+.kid {
+    background: black;
+    border-bottom: 9px solid #222;
+}
+
+.kid .grid > div:first-child {
+    order: 2;
+}
+
+.kid .img-tv {
+    order: 1;
+    margin-top: 90px;
+}
+
+
+.kid h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.kid p {
+    font-size: 20px;
+    width: 400px;
+}
+
+.end {
+    background: black;
+}
+
+.end p{
+   margin-top: 70px;
+   text-align: center;
+}
+
+.end .form-email {
+    margin-bottom: 50px;
+}
+
+.end span {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
